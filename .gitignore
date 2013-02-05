@@ -1,0 +1,28 @@
+############
+## Sublime Text 2
+############
+
+*.sublime-workspace
+
+#############
+## Sass
+#############
+
+.sass-cache
+
+############
+## Windows
+############
+
+# Windows image file caches
+Thumbs.db
+
+# Folder config file
+Desktop.ini
+
+############
+## Mac
+############
+
+# Mac crap
+.DS_Store

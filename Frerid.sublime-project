@@ -1,0 +1,34 @@
+{
+	"folders":
+	[
+		{
+			"path": "/",
+			"folder_exclude_patterns": [".sass-cache"]
+		}
+	],
+	"settings":
+    {
+        "tab_size": 4
+    },
+    "build_systems":
+    [
+    	{
+    		"name": "Coffee",
+    		"cmd": ["coffee.cmd", "-bc", "$file"],
+    		"path": "$PATH",
+    		"selector": "source.coffee",
+    		"working_dir": "$project_path"
+    	},
+		{
+			"name": "Compass",
+			"cmd": "cd '$project_path'; compass compile",
+			"working_dir": "$packages/Compass",
+			"selector": "source.sass, source.scss",
+			"shell": "true",
+			"windows":
+			{
+				"cmd": ["compass", "compile", "$project_path"]
+			}
+		}
+    ]
+}

@@ -1,7 +1,10 @@
 class Home
 	constructor: ->
-		$(document).html("<h1>This is home</h1>")
+		$("#main").html("<h1>This is home</h1>")
+
+	index: ->
+		$("#main").append("<p>This is the Index behavior of this action.</p>")
 
 	# Url would be like website.com/#!/Home/multiply/1/2
 	multiply: (a, b) ->
-		$(document).append("The answer is #{a*b}.")
+		$("#main").append("<p>The answer is #{a*b}.</p>")
