@@ -8,3 +8,6 @@ class Home
 	# Url would be like website.com/#!/Home/multiply/1/2
 	multiply: (a, b) ->
 		$("#main").append("<p>The answer is #{a*b}.</p>")
+
+root = exports ? window
+root.Home = Home

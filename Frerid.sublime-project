@@ -14,7 +14,7 @@
     [
     	{
     		"name": "Coffee",
-    		"cmd": ["coffee.cmd", "-o", "js", "-bc", "$file"],
+    		"cmd": ["coffee.cmd", "-o", "js", "-b", "$file"],
     		"path": "$PATH",
     		"selector": "source.coffee",
     		"working_dir": "$project_path"
